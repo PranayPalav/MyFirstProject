@@ -19,10 +19,11 @@ class stats{
 	}
 }
 public class static_demo extends stats {
-static int num1;
+static int num1,num3;
 
 //  static block
 	static{
+	num3=display1();
 		num1=num;  // u  Cannot make a static reference to the non-static field num1(if u not declare num1 as a static)
 	}
 	public static void main(String args[]){
@@ -30,6 +31,7 @@ static int num1;
 	System.out.println(name);
 	System.out.println(num1);
 	System.out.println(num2);
+	System.out.println("hello num3 "+num3);
 	}
 	
 
